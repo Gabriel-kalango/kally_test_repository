@@ -1,6 +1,6 @@
-Flask
-Flask-RESTful
-Flask-JWT
-flask-SQLAlchemy
+Flask==2.0.2
+Flask-RESTful==0.3.9
+Flask-JWT==0.3.2
+flask-SQLAlchemy==2.5.1
 uwsgi
 PyJWT==1.7.1
