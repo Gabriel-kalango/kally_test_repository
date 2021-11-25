@@ -4,3 +4,4 @@ Flask-JWT==0.3.2
 flask-SQLAlchemy==2.5.1
 uwsgi
 PyJWT==1.4.2
+psycopg2
