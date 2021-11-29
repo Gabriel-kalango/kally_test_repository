@@ -9,7 +9,8 @@ from resources.user import registeruser
 from resources.item import Item,Itemlist
 from resources.store import Store,Storelist
 app=Flask(__name__)
-app.config["SQLALCHEMY_DATABASE_URI"]=os.environ.get("sqlite:///data.db",'DATABASE_URL?sslmode=require').replace('postgres://', 'postgresql://')
+DATABASE_URL="postgres://gbcjspxtyhnytb:e463bc9c77ae037cb0ea6c6e4113f8d218b30bdf523e580f840709ed8c3e27d0@ec2-34-192-41-115.compute-1.amazonaws.com:5432/deodntnq4be4bt"
+app.config["SQLALCHEMY_DATABASE_URI"]=os.environ.get("sqlite:///data.db",'DATABASE_URL')
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"]=False
 app.secret_key="kally"
 api=Api(app)
